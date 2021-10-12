@@ -1,0 +1,52 @@
+body{
+    background-color: lightskyblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    
+#tableSection {
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+#addKoala {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.text_div{
+  display: inline-block;
+  margin-left: 10px;
+  top: 55px;
+  position: relative;
+}
+
+.icon_div{
+  display: inline-block;
+  margin-left: 15px;
+  border: 5px solid lightskyblue;
+}
+
+.dropdown-content{
+  width: auto;
+  padding: 4px;
+  border: 1px solid gray;
+  border-radius: 3px; 
+}
+
+button {
+  font-family: Helvetica, sans-serif;
+  background-color: black;
+  color: white; 
+}
+
+input:focus{
+  outline: none;
+  border: 3px solid black;
+}
+
+.imageface{
+    width: 25px;
+    height: 25px;
+}
