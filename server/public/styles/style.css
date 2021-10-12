@@ -12,7 +12,7 @@ body{
 
 .taskCompleted {
     text-decoration: line-through;
-    color: black;
+    color: black
 }
 
 .text_div{
