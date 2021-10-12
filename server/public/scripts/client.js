@@ -26,25 +26,25 @@ function addTask(){
         //empty out input
         $( `#taskInput` ).val('');
     }).catch( function( err ){
-        console.log( 'problem posting task!', err )
+        console.log( 'Post method error!', err )
     });//end AJAX
 
 }; //end addTask
 
 function completeTask(){
-    console.log( 'in complete task' );
+    console.log( 'in complete task function' );
     $.ajax({
         method: 'PUT',
         url: '/tasks?id=' + $( this ).data( 'id' )
     }).then(function (response){
         getTasks();
     }).catch(function (err){
-        console.log( 'problem updating task!', err )
+        console.log( 'Put method error!', err )
     })
 }; //end completeTask
 
 function deleteTask(){
-    console.log( 'in deleteTask', $( this ).data( 'id' ) );
+    console.log( 'in deleteTask function', $( this ).data( 'id' ) );
 //create a function that sends an AJAX DELETE 
     //req to the server in the client using $(this).data( 'id' )
     $.ajax({
@@ -53,7 +53,7 @@ function deleteTask(){
     }).then(function (response){
         getTasks();
     }).catch( function( err ){
-        console.log( 'problem deleting task!', err )
+        console.log( 'Delete method error!', err )
     })}; //end deleteTask
 
 function getTasks(){
@@ -84,5 +84,5 @@ function getTasks(){
                     </tr>`)
         }
     }}).catch( function( err ){
-        console.log( 'problem getting tasks!', err )
+        console.log( 'Get method error!', err )
     })}; //end getTasks

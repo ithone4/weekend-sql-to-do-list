@@ -5,14 +5,14 @@ body{
     
 #tableSection {
     margin-top: 30px;
-    padding-left: 50px;
+    padding-left: 100px;
     padding-right: 50px;
 
 }
 
-#addKoala {
-  padding-left: 50px;
-  padding-right: 50px;
+.taskCompleted {
+    text-decoration: line-through;
+    color: black;
 }
 
 .text_div{
